@@ -71,8 +71,13 @@ class Election:
                             except:
                                 input('Введите капчу в браузере и нажмите Enter в консоли')
 
-                        elem = driver.find_element_by_class_name('zGgQYFH7FOF05jHEbOfau')
-                        elem.click()
+                        driver.execute_script("window.localStorage.clear();")
+                        elem = driver.find_elements_by_css_selector('video')[0]
+                        elem_parent = elem.find_element_by_xpath('..')
+                        elem_buttons = elem_parent.find_elements_by_xpath('//button')
+                        elem_buttons[4].click()
+                        # elem = driver.find_element_by_class_name('zGgQYFH7FOF05jHEbOfau')
+                        # elem.click()
                         time.sleep(stream_delay)
                         series = self.get_series(path)
                         for i in range(3):
