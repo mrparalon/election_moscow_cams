@@ -22,10 +22,12 @@ for station_name in station_names:
         files = os.listdir(cam_path)
         for file_name in files:
             file_path = cam_path / file_name
-            new_name = file_name.split('.')[0]
+            name_ext = file_name.split('.')
+            new_name = name_ext[0]
+            ext = name_ext[1]
             new_name = new_name.replace('_', '-')
             new_name = new_name.replace('-', '_', 2)
-            new_name = f'{new_name}.png'
+            new_name = f'{new_name}.{ext}'
             file_path.rename(cam_path / new_name)
         station_obj = cam_ids.get(station_name)
         if station_obj is not None:
