@@ -1,13 +1,13 @@
 # Запись скриншотов камер наблюдения на московских выборах
 
 ## Требования
-    - python 3.7 [веб-установщик](https://www.python.org/ftp/python/3.7.8/python-3.7.8-amd64-webinstall.exe) При установке надо поставить флажек `Add Phyton 3.7 to PATH`
-    - Браузер Google Chrome [установка тут](https://www.google.ru/intl/ru/chrome)
-    - Драйвер для браузера[установка тут](https://sites.google.com/a/chromium.org/chromedriver/downloads). 
+   - python 3.7 [веб-установщик](https://www.python.org/ftp/python/3.7.8/python-3.7.8-amd64-webinstall.exe) При установке надо поставить флажек `Add Phyton 3.7 to PATH`
+   - Браузер Google Chrome [установка тут](https://www.google.ru/intl/ru/chrome)
+   - Драйвер для браузера[установка тут](https://sites.google.com/a/chromium.org/chromedriver/downloads). 
 
 ## Установка драйвера браузера
-	1. Скачиваем[тут](https://sites.google.com/a/chromium.org/chromedriver/downloads) Версия должна быть как [тут](chrome://version) с точность до первой точки.
-	2. Распаковываем архив в C:\Windows\ (там всего один файл)
+   1. Скачиваем [тут](https://sites.google.com/a/chromium.org/chromedriver/downloads) Версия должна быть как [тут](chrome://version) с точность до первой точки.
+   2. Распаковываем архив в C:\Windows\ (там всего один файл)
 
 ## Установка
 
@@ -23,9 +23,9 @@
 ## Запуск
 В консоль копируем команду:
 `python run.py --stream_delay 2 --shots_delay 5`
-    - stream_delay - задержка начала сохранения скриншотов после открытия видео в полный экран
-    - shots_delay - задержка между кадрами
-    - stations - путь к списку уиков. Текстовый файл с номерами уиков. Один номер уика на каждой строчке. Пример stations.txt
+  - stream_delay - задержка начала сохранения скриншотов после открытия видео в полный экран
+  - shots_delay - задержка между кадрами
+  - stations - путь к списку уиков. Текстовый файл с номерами уиков. Один номер уика на каждой строчке. Пример stations.txt
 
 
 ## Описание работы

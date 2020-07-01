@@ -1,4 +1,5 @@
 # coding: utf8
+
 import os
 import csv
 import time
@@ -48,7 +49,6 @@ class Election:
             stations = []
             for i in stations_file.readlines():
                 stations.append(i.rstrip())
-            breakpoint()
 
         with open('webcams.csv', 'r', encoding='utf8') as f:
             polling_stations = csv.DictReader(f)
